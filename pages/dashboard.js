@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
-function dashboard() {
+function Dashboard() {
     const { data: session, status } = useSession()
     return (
         <div className="flex min-h-screen flex-col items-center justify-center" >
@@ -51,4 +51,4 @@ function dashboard() {
     );
 }
 
-export default dashboard;
+export default Dashboard;
