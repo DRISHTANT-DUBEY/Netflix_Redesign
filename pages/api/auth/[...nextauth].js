@@ -7,7 +7,8 @@ export default NextAuth({
         Auth0Provider({
             clientId: process.env.AUTH0_ID,
             clientSecret: process.env.AUTH0_SECRET,
-            issuer: process.env.AUTH0_ISSUER
+            issuer: process.env.AUTH0_ISSUER,
         })
-    ]
+    ],
+    secret: process.env.NEXTAUTH_SECRET,
 })
